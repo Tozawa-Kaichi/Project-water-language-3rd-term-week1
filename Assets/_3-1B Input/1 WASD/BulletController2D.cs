@@ -2,7 +2,7 @@
 
 public class BulletController2D : MonoBehaviour
 {
-    [SerializeField] Vector2 _dir = Vector2.up;
+    [SerializeField] Vector2 _dir = Vector2.right;
     [SerializeField] float _speed = 10f;
     [SerializeField] float _lifeTime = 2f;
 
