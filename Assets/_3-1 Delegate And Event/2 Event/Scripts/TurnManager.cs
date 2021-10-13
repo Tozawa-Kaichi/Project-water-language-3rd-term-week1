@@ -6,6 +6,10 @@
 /// </summary>
 public class TurnManager
 {
+    //public delegate void M(int i);
+    //M _OnBeginTurn;
+
+
     /// <summary>ターン開始時に呼ばれるメソッド</summary>
     public static event Action OnBeginTurn;
     /// <summary>ターン終了時に呼ばれるメソッド</summary>
