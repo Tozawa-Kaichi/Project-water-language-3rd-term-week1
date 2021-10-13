@@ -18,7 +18,7 @@ public class CanonController : MonoBehaviour
 
         if(Input.GetButtonDown("Fire1"))
         {
-            Instantiate(m_BombPrefab,m_muzzle.position,this.transform.rotation);
+            Instantiate(m_BombPrefab,m_muzzle.position,m_muzzle.transform.rotation);
         }
     }
 }
