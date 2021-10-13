@@ -13,9 +13,11 @@ public class BallController3D : MonoBehaviour
         _pauseManager = GameObject.FindObjectOfType<PauseManager3D>();  // この処理は Start やると遅いので Awake で行う。OnEnable の方が Start より先に呼ばれるため。
     }
 
+
     void OnEnable()
     {
         // 呼んで欲しいメソッドを登録する。
+        // 自分を 追加するために+＝
         _pauseManager.OnPauseResume += PauseResume;
     }
 
