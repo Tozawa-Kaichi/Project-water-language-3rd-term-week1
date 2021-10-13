@@ -804,7 +804,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1049568044
 PrefabInstance:
@@ -1294,6 +1294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1774fb1e0f5bc9049a7fda48b8b36b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_BombPrefab: {fileID: 1437454179212271989, guid: 4996416e5d6f31d4dabd4b1803689893,
+    type: 3}
+  m_muzzle: {fileID: 1484554048}
 --- !u!1001 &1567127912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1762,7 +1765,7 @@ PrefabInstance:
     - target: {fileID: 8453441401802238829, guid: d91e9963a8217f645b98b9cad8a821fd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8453441401802238829, guid: d91e9963a8217f645b98b9cad8a821fd,
         type: 3}
