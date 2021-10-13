@@ -33,6 +33,7 @@ public class TurnManager
     {
         OnBeginTurn();
         m_isTurnStarted = true;
+        m_turnCount += 1;
     }
 
     /// <summary>
