@@ -218,6 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c15c224d947df4e9c07de95e244f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uevent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &240029773
 Transform:
   m_ObjectHideFlags: 0
@@ -249,7 +252,7 @@ MonoBehaviour:
   _spawnPoints:
   - {fileID: 1039720939}
   - {fileID: 1111645669}
-  _interval: 10
+  _interval: 4.43
 --- !u!114 &240029775
 MonoBehaviour:
   m_ObjectHideFlags: 0

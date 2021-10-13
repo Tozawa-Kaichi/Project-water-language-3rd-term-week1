@@ -57,7 +57,6 @@ public class PaddleController3D : MonoBehaviour
 
     public void Pause()
     {
-        
         speed = _rb.velocity ;
         k = 0;
         _rb.Sleep();

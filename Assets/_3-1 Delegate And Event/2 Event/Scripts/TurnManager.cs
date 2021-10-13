@@ -46,7 +46,7 @@ public class TurnManager
         {
             BeginTurn();
         }
-
+        
         OnEndTurn();
         m_isTurnStarted = false;
     }

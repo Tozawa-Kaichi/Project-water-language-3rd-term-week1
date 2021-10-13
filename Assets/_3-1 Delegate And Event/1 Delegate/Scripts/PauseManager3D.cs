@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using System;
 /// <summary>
 /// 一時停止・再開を制御する。
 /// </summary>
@@ -8,20 +8,20 @@ public class PauseManager3D : MonoBehaviour
     /// <summary>true の時は一時停止とする</summary>
     bool _pauseFlg = false;
     /// <summary>一時停止・再開を制御する関数の型（デリゲート）を定義する</summary>
-    public delegate void Pause(bool isPause);
+    public event Action <bool> OnPauseResume;
     /// <summary>デリゲートを入れておく変数</summary>
-    Pause _onPauseResume = default;
+    
     [SerializeField] UnityEngine.Events.UnityAction uaction;
     [SerializeField] UnityEngine.Events.UnityEvent uevent;
 
     /// <summary>
     /// 一時停止・再開を入れるデリゲートプロパティ
     /// </summary>
-    public Pause OnPauseResume
-    {
-        get { return _onPauseResume; }
-        set { _onPauseResume = value; }
-    }
+    //public Pause OnPauseResume
+    //{
+    //    get { return _onPauseResume; }
+    //    set { _onPauseResume = value; }
+    //}
 
     void Update()
     {
@@ -38,6 +38,6 @@ public class PauseManager3D : MonoBehaviour
     void PauseResume()
     {
         _pauseFlg = !_pauseFlg;
-        _onPauseResume(_pauseFlg);  // これで変数に代入した関数を（全て）呼び出せる
+        OnPauseResume(_pauseFlg);  // これで変数に代入した関数を（全て）呼び出せる
     }
 }
