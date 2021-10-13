@@ -12,4 +12,8 @@ public class BulletController2D : MonoBehaviour
         rb.velocity = _dir.normalized * _speed;
         Destroy(this.gameObject, _lifeTime);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(this.gameObject);
+    }
 }
